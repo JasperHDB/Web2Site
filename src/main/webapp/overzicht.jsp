@@ -27,20 +27,26 @@
         Lijst van de gitaren
     </h1>
 
-    <div class="grid-container">
-        <div class="grid-item">Klassiek</div>
-        <div class="grid-item">Yamaha</div>
-        <div class="grid-item">€228.19</div>
-        <div class="grid-item">3/5 *</div>
-        <div class="grid-item">Elektrisch</div>
-        <div class="grid-item">Fender</div>
-        <div class="grid-item">€425.60</div>
-        <div class="grid-item">4/5 *</div>
-        <div class="grid-item">Ukelele</div>
-        <div class="grid-item">Epiphone</div>
-        <div class="grid-item">€90.50</div>
-        <div class="grid-item">2/5 *</div>
-    </div>
+    <table>
+        <tr class="row1">
+            <td>Klassiek</td>
+            <td>Yamaha</td>
+            <td>&euro;228.19</td>
+            <td>3/5 *</td>
+        </tr>
+        <tr class="row2">
+            <td>Elektrisch</td>
+            <td>Fender</td>
+            <td>&euro;425.60</td>
+            <td>4/5 *</td>
+        </tr>
+        <tr class="row3">
+            <td>Ukelele</td>
+            <td>Epiphone</td>
+            <td>&euro;90.50</td>
+            <td>2/5 *</td>
+        </tr>
+    </table>
 </main>
 </body>
 </html>

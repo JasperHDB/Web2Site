@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <!-- Reference to the css file -->
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Gitaar</title>
+    <title>Gitaar | Voeg Toe</title>
 </head>
 <body>
 <header>
@@ -28,21 +28,17 @@
     </h1>
 
     <form>
-        <br>
-        <label for="cars">Soort gitaar:</label>
-        <br>
-        <select name="cars" id="cars">
+        <label for="type">Type gitaar:</label>
+        <select name="test" id="type">
             <option value="elek">Elektrische gitaar</option>
             <option value="klass">Klassieke gitaar</option>
             <option value="akoe">Akoestische gitaar</option>
         </select>
-        <br><br>
     </form>
 
     <form>
-        <label for="cars">Merk gitaar:</label>
-        <br>
-        <select name="cars">
+        <label for="brand">Merk gitaar:</label>
+        <select name="test" id="brand">
             <option value="fen">Fender</option>
             <option value="gib">Gibson</option>
             <option value="gnl">G&L</option>
@@ -51,11 +47,30 @@
             <option value="epi">Epiphone</option>
             <option value="iba">Ibanez</option>
         </select>
-        <br><br>
     </form>
 
+    <form>
+        <label for="price">Prijs: &euro;</label>
+        <input type="number" id="price" name="price" min="1" max="5000">
+    </form>
 
-    <input type="submit" value="Submit">
+    <div style="margin-top: 2rem">
+        <label for="brand" class="ratingLabel">Rating:</label>
+        <form class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="5">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="4">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="3">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="2">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="1">1 star</label>
+        </form>
+    </div>
+
+    <input class="submit" type="submit" value="Submit">
 </main>
 </body>
 </html>
